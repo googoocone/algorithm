@@ -63,7 +63,7 @@ def solution(rows, columns, queries):
             new_matrix[a1 + num][a2] = matrix_left[num]
 
         # 옮긴 매트릭스를 기존의 매트릭스 위에 덮어씌웁니다.
-        new_matrix = new_matrix
+        matrix = new_matrix
 
         min_top = min(matrix_top)
         min_right = min(matrix_right)
