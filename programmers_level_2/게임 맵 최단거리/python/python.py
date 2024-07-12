@@ -23,7 +23,7 @@ def solution(maps):
             if 0 <= new_row < rows and 0 <= new_col < cols and not visited[new_row][new_col] and maps[new_row][new_col] == 1:
                 visited[new_row][new_col] = True
                 go(new_row, new_col, num + 1)
-                visited[new_row][new_col] = False  # 백트래킹
+                visited[new_row][new_col] = False 
                 
     visited[0][0] = True
     go(0, 0, 1)
